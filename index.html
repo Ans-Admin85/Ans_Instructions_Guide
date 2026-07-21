@@ -135,7 +135,11 @@
     border-radius:3px; list-style:none; font-size:0.98rem;
   }
   nav.toc summary::-webkit-details-marker{display:none;}
-  nav.toc summary::before{content:"◂ "; color:var(--gold); font-size:0.8em;}
+  nav.toc summary::before{
+    content:"◂"; color:var(--gold); font-size:0.8em; margin-left:6px;
+    display:inline-block; transition:transform .15s ease;
+  }
+  nav.toc details[open] > summary::before{transform:rotate(-90deg);}
   nav.toc summary:hover{background:rgba(28,58,82,0.06);}
   nav.toc ul{list-style:none; padding-inline-start:20px; margin:2px 0 10px;}
   nav.toc a{
