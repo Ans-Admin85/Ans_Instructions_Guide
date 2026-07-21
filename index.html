@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل التعليمات المدرسيّة لأولياء الأمر والطلبة | 2026-2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;600;700&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1c3a52;
+    --navy-dark:#12283a;
+    --gold:#c9a24b;
+    --cream:#faf6ec;
+    --paper:#fffdf8;
+    --ink:#25313d;
+    --teal:#3c7a6b;
+    --line:#e3d9c2;
+    --red:#a6402f;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:.001ms !important; transition-duration:.001ms !important;}
+  }
+  body{
+    margin:0; background:var(--cream); color:var(--ink);
+    font-family:'Tajawal', sans-serif; line-height:1.85; font-size:16.5px;
+  }
+  h1,h2,h3,h4{font-family:'Markazi Text', serif; color:var(--navy); margin:0; font-weight:700;}
+  p,li{margin:0 0 10px;}
+  ul{padding-inline-start:22px; margin:0 0 14px;}
+  a{color:inherit;}
+
+  /* ===== HEADER ===== */
+  header.top{
+    background:linear-gradient(155deg, var(--navy), var(--navy-dark));
+    color:var(--paper);
+    padding:52px 24px 40px;
+    text-align:center;
+    position:relative;
+    border-bottom:4px solid var(--gold);
+  }
+  .emblem{
+    display:block; height:84px; width:auto; margin:0 auto 18px;
+    background:var(--paper); padding:8px; border-radius:50%;
+    box-shadow:0 3px 10px rgba(0,0,0,0.25);
+  }
+  header.top h1{color:var(--paper); font-size:2.5rem; line-height:1.3;}
+  header.top .year{
+    display:inline-block; margin-top:14px; font-family:'Tajawal',sans-serif;
+    font-weight:700; letter-spacing:1px; color:var(--gold); font-size:1.05rem;
+    border:1px solid var(--gold); padding:6px 22px; border-radius:2px;
+  }
+  header.top .school-name{
+    font-family:'Tajawal',sans-serif; font-weight:900; font-size:1rem;
+    letter-spacing:2px; text-transform:uppercase; color:#cdd9e2; margin-top:10px;
+  }
+
+  /* ===== LAYOUT ===== */
+  .layout{
+    max-width:1180px; margin:0 auto; display:flex; gap:0; align-items:flex-start;
+  }
+  nav.toc{
+    width:290px; flex-shrink:0; position:sticky; top:0;
+    max-height:100vh; overflow-y:auto; padding:34px 22px 60px 10px;
+    border-left:1px solid var(--line);
+  }
+  nav.toc .toc-label{
+    font-family:'Tajawal',sans-serif; font-weight:900; color:var(--navy);
+    font-size:0.8rem; letter-spacing:2px; text-transform:uppercase; margin-bottom:16px; display:block;
+  }
+  nav.toc details{margin-bottom:6px;}
+  nav.toc summary{
+    cursor:pointer; font-weight:700; color:var(--navy); padding:8px 10px;
+    border-radius:3px; list-style:none; font-size:0.98rem;
+  }
+  nav.toc summary::-webkit-details-marker{display:none;}
+  nav.toc summary::before{content:"◂ "; color:var(--gold); font-size:0.8em;}
+  nav.toc summary:hover{background:rgba(28,58,82,0.06);}
+  nav.toc ul{list-style:none; padding-inline-start:20px; margin:2px 0 10px;}
+  nav.toc a{
+    display:block; text-decoration:none; font-size:0.88rem; color:#4a5a68;
+    padding:5px 8px; border-radius:3px;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible{background:rgba(201,162,75,0.18); color:var(--navy); outline:none;}
+
+  main{flex:1; min-width:0; padding:40px 40px 100px;}
+
+  .intro-note{
+    background:var(--paper); border:1px solid var(--line); border-right:5px solid var(--gold);
+    padding:22px 26px; margin-bottom:44px; font-size:0.98rem; color:#3d4a56;
+  }
+
+  .part{
+    margin-bottom:56px;
+  }
+  .part-head{
+    display:flex; align-items:baseline; gap:14px; margin-bottom:22px;
+    border-bottom:2px solid var(--navy); padding-bottom:10px;
+  }
+  .part-num{
+    font-family:'Markazi Text',serif; font-weight:700; font-size:1.6rem; color:var(--gold);
+  }
+  .part-head h2{font-size:1.9rem;}
+
+  article.sec{
+    background:var(--paper); border:1px solid var(--line);
+    padding:24px 28px; margin-bottom:20px;
+  }
+  article.sec h3{font-size:1.35rem; margin-bottom:12px; padding-bottom:8px; border-bottom:1px dashed var(--line);}
+  article.sec h4{font-size:1.08rem; color:var(--teal); margin:14px 0 6px;}
+  article.sec .note{
+    background:rgba(201,162,75,0.1); border-right:3px solid var(--gold);
+    padding:10px 14px; font-size:0.92rem; margin-top:10px;
+  }
+  article.sec .warn{
+    background:rgba(166,64,47,0.08); border-right:3px solid var(--red);
+    padding:10px 14px; font-size:0.92rem; margin-top:10px; color:var(--red); font-weight:700;
+  }
+
+  table.simple{width:100%; border-collapse:collapse; margin:10px 0 16px; font-size:0.92rem;}
+  table.simple th, table.simple td{border:1px solid var(--line); padding:8px 10px; text-align:right;}
+  table.simple th{background:var(--navy); color:var(--paper); font-weight:700;}
+  table.simple tr:nth-child(even) td{background:#f5f0e2;}
+
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media (max-width:760px){.grid2{grid-template-columns:1fr;}}
+
+  .appendix-list{list-style:none; padding:0; display:grid; gap:10px;}
+  .appendix-list li{
+    background:var(--paper); border:1px solid var(--line); padding:12px 16px;
+    display:flex; align-items:center; gap:10px; font-weight:700; color:var(--navy);
+  }
+  .appendix-list li::before{content:"📎"; font-size:1.1rem;}
+
+  footer.site{
+    text-align:center; padding:40px 20px; color:#5a6a78; font-size:0.9rem;
+    border-top:1px solid var(--line);
+  }
+
+  /* Mobile nav */
+  .mobile-toc-toggle{display:none;}
+  @media (max-width:900px){
+    .layout{flex-direction:column;}
+    nav.toc{
+      width:100%; position:relative; max-height:none; border-left:none;
+      border-bottom:1px solid var(--line); padding:20px 16px;
+    }
+    main{padding:30px 18px 80px;}
+  }
+
+  a:focus-visible, summary:focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <img class="emblem" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAABsCAYAAACB4+vnAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAF8WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDggNzkuMTY0MDM2LCAyMDE5LzA4LzEzLTAxOjA2OjU3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE3LTA2LTE5VDExOjE1OjIxKzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMy0wNC0xMlQxMzo1ODo1OSswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMy0wNC0xMlQxMzo1ODo1OSswMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpiYjFmN2VmZi1kZmFlLWU4NDYtOGZhOC0zODUxY2RlZjUyNzgiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpiNmIxMTI2ZC0zYWE5LTI4NGYtYTQwYi1jODBmYzQwOGUyZDkiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkOGVmY2VhMC1mNjZiLTdmNDYtOWEyZi0yMzEwMWRjN2EwNTQiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmQ4ZWZjZWEwLWY2NmItN2Y0Ni05YTJmLTIzMTAxZGM3YTA1NCIgc3RFdnQ6d2hlbj0iMjAxNy0wNi0xOVQxMToxNToyMSswMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpiYjFmN2VmZi1kZmFlLWU4NDYtOGZhOC0zODUxY2RlZjUyNzgiIHN0RXZ0OndoZW49IjIwMjMtMDQtMTJUMTM6NTg6NTkrMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMS4wIChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7+ppzjAABHhklEQVR4nO2dd3xVRfr/3zPn3HvTK0mAUEIIvYMgVQQVsWFBdJVyTYyKuqvoqmvZNQbrrqui7q6sYuIFo6uuBUVFbKBUQemEmkIgBEhvt50z8/sjCaKAu18XBfz5eb3yeuWeM/U5n/PMzDPPM0dorfkVv+J/hTzRDfgVvwz8SqRfcVxgfv/CzJkzT0Q7TjiytIpn15Yo3njP9zSTVIivSl3PtMqZ2fn2iW7byYb777//iGtHEOmXjqweraPGv704JSDrRje0CeleHm51vkwmJ7z5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" alt="شعار مدرسة عمّان الوطنيّة">
+  <div class="school-name">مدرسة عمّان الوطنيّة</div>
+  <h1>دليل التعليمات المدرسيّة<br>لأولياء الأمر والطلبة</h1>
+  <span class="year">للعام الدراسيّ 2026 – 2027</span>
+</header>
+
+<div class="layout">
+
+  <nav class="toc" aria-label="فهرس الدليل">
+    <span class="toc-label">الفهرس</span>
+
+    <details open>
+      <summary>المقدّمة والبرامج</summary>
+      <ul>
+        <li><a href="#intro">المقدّمة، الرؤية، الرسالة، الفلسفة</a></li>
+        <li><a href="#programs">البرامج التعليميّة</a></li>
+        <li><a href="#language">لغة التواصل والتدريس</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>الدعم والرعاية</summary>
+      <ul>
+        <li><a href="#resources">قسم المصادر التعليميّة</a></li>
+        <li><a href="#academic-guidance">الإرشاد الأكاديميّ</a></li>
+        <li><a href="#psychosocial">الرعاية النفسيّة والاجتماعيّة</a></li>
+        <li><a href="#health">الرعاية الصحّيّة والإصابات</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>الحياة المدرسيّة</summary>
+      <ul>
+        <li><a href="#sustainability">التنمية المستدامة في المدرسة</a></li>
+        <li><a href="#class-distribution">توزيع الطلبة على الشُعَب</a></li>
+        <li><a href="#library">المكتبة المدرسيّة</a></li>
+        <li><a href="#story-committee">لجنة تقييم القصص الصفّيّة</a></li>
+        <li><a href="#technology">استخدام التكنولوجيا</a></li>
+        <li><a href="#trips">الرحلات المدرسيّة</a></li>
+        <li><a href="#sports">المنتخبات الرياضيّة</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>التعلّم والتقويم</summary>
+      <ul>
+        <li><a href="#homework">المهامّ البيتيّة</a></li>
+        <li><a href="#assessment">التقويم</a></li>
+        <li><a href="#reports">التقارير المدرسيّة</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>الدوام والانضباط</summary>
+      <ul>
+        <li><a href="#attendance-hours">الدوام وأوقات الدوام</a></li>
+        <li><a href="#absence">التغيّب</a></li>
+        <li><a href="#pass-fail">النجاح والإكمال والرسوب</a></li>
+        <li><a href="#departure">المغادرة خلال الدوام</a></li>
+        <li><a href="#gates">دخول وخروج الطلبة من الحرم المدرسيّ</a></li>
+        <li><a href="#b12">تطبيق B12</a></li>
+        <li><a href="#entry-exit-procedures">إجراءات الدخول والخروج</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>الحياة اليوميّة</summary>
+      <ul>
+        <li><a href="#meals">وجبات الطلبة</a></li>
+        <li><a href="#cafeteria">المقصف</a></li>
+        <li><a href="#celebrations">الاحتفال بالأعياد والمناسبات</a></li>
+        <li><a href="#uniform">الزيّ المدرسيّ</a></li>
+        <li><a href="#property">الممتلكات المدرسيّة</a></li>
+        <li><a href="#lost-found">المفقودات</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>التواصل مع الأهل</summary>
+      <ul>
+        <li><a href="#campus-access">دخول أولياء الأمر إلى الحرم المدرسيّ</a></li>
+        <li><a href="#communication">التواصل بين المدرسة وأولياء الأمر</a></li>
+        <li><a href="#participation">مشاركة أولياء الأمر في الأنشطة</a></li>
+        <li><a href="#helper-parent">وليّ الأمر المساعد</a></li>
+        <li><a href="#social-media">شبكات التواصل الاجتماعيّ</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>الملحقات</summary>
+      <ul>
+        <li><a href="#appendices">قائمة الملحقات</a></li>
+        <li><a href="#appendix-buses">ملحق ١: تعليمات استخدام حافلات المدرسة</a></li>
+      </ul>
+    </details>
+  </nav>
+
+  <main>
+    <div class="intro-note">
+      تأمل إدارة مدرسة عمّان الوطنيّة من أولياء الأمر الكرام التعاون معها في تطبيق التعليمات الواردة في هذا الدليل، لأهمّيّة ذلك في تنظيم سير العمليّة التربويّة وتسهيلها. نرجو منكم قراءة التعليمات بتمعّن، والاحتفاظ بها طيلة العام الدراسيّ للرجوع إليها عند الضرورة، ومراجعتها مع أبنائكم وبناتكم.
+    </div>
+
+    <!-- PART 1 -->
+    <section class="part" id="intro">
+      <div class="part-head"><span class="part-num">١</span><h2>المقدّمة، الرؤية، الرسالة، الفلسفة</h2></div>
+
+      <article class="sec">
+        <h3>رؤيتنا</h3>
+        <p>تتطلّع مدرسة عمّان الوطنيّة إلى بناء جيلٍ يوازن بين ضرورة الأصالة وحتميّة الحداثة، جيلٍ قادر على مواكبة التطوّر العالميّ في مجال العلوم والإنسانيّات والتكنولوجيا، منطلقٍ من تراثه وحضارته ولغته وهُويّته، مزوّد بثقة عالية وعزيمة قويّة وعقول متوقّدة.</p>
+
+        <h3>رسالتنا</h3>
+        <p>تشكّل مدرسة عمّان الوطنيّة مجتمعًا يتكوّن من طلبة ومعلّمين ومعلّماتٍ وأولياء أمورٍ، يعملون معًا لتحقيق التميّز في التعليم. توفّر مدرستنا مناهجَ مميّزةً، وبيئة دراسيّة تشجّع على المبادرة الشخصيّة والإبداع والفضول، لتنمّي لدى الطلبة الثقة بالنفس وتحمّل المسؤوليّة والتفكير البنّاء، ليكونوا عنصرًا إيجابيًّا في عالمٍ تنافسيّ متنوّع الثقافات، معتزّين بهُويّتهم وتراثهم العربيّ.</p>
+
+        <h3>فلسفة المدرسة</h3>
+        <p>تقوم فلسفة عمّان الوطنيّة على الإيمان بقدرات الطفل ورغبته الفطريّة في التعلّم، وتعمل على تنمية هذه القدرات نموًّا سليمًا متوازنًا في بيئة صحّيّة آمنة. ترى المدرسة أنّ لها دورًا فعّالًا في نموّ شخصيّة الطفل الفرديّة والاجتماعيّة، فتسعى لتعلّم نشط يهتمّ بنتاجات ذات قيمة تتعدّى النتاجات المعرفيّة، لخلق إنسانٍ ناقد مبدع وباحث قادر على التعلّم الذاتيّ المستمرّ، مقدّر لذاته، قادر على التغيّر الإيجابيّ، متفاعل مع الآخرين. كما تركّز المدرسة على تقويم تربويّ ودّيّ متمايز متكرّر مستمرّ.</p>
+
+        <h3>المراحل الدراسيّة</h3>
+        <p>تضمّ مدرسة عمّان الوطنيّة خمس مراحل، على رأس كلّ منها مدير/ة مسؤول/ة:</p>
+        <ul>
+          <li>مرحلة الروضة (بستان – تمهيديّ)</li>
+          <li>المرحلة الأساسيّة الأولى (الأوّل – الثالث)</li>
+          <li>المرحلة الأساسيّة المتوسّطة (الرابع – السادس)</li>
+          <li>المرحلة الأساسيّة العليا (السابع – التاسع)</li>
+          <li>المرحلة الثانويّة (العاشر – الثاني عشر)</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PART 2 -->
+    <section class="part" id="programs">
+      <div class="part-head"><span class="part-num">٢</span><h2>البرامج التعليميّة ولغة التدريس</h2></div>
+
+      <article class="sec">
+        <h3>البرامج التعليميّة</h3>
+        <p>تطبّق المدرسة برنامجًا تعليميًّا خاصًّا بها يرتكز على معايير وزارة التربية والتعليم، بالإضافة لمعايير عالميّة. تعتمد المدرسة برنامج البكالوريا الدوليّة للمرحلة المتوسّطة (MYP) من الصفّ السادس حتّى العاشر الأساسيّ. بعد الصفّ الثامن، يتوزّع الطلبة إلى فرعين:</p>
+        <ul>
+          <li>البرنامج الأردنيّ حتّى الصفّ الثاني عشر، وينتهي بإمكانيّة التقدّم لامتحان شهادة الدراسة الثانويّة العامّة.</li>
+          <li>برنامج البكالوريا الدوليّة حتّى الصفّ الثاني عشر، وينتهي بإمكانيّة التقدّم لامتحان البكالوريا الدوليّة.</li>
+        </ul>
+      </article>
+
+      <article class="sec" id="language">
+        <h3>لغة التواصل والتدريس</h3>
+        <p>تعتمد المدرسة اللغة العربيّة لغةً أساسيّة في التواصل والتدريس والمنشورات المدرسيّة، وتستخدم اللغة الإنجليزيّة في التواصل مع الجامعات والمؤسّسات الدوليّة.</p>
+        <ul>
+          <li><strong>مرحلة الروضة:</strong> تُستخدم اللغتان العربيّة والإنجليزيّة للتدريس، بمعلّمتين في الصفّ الواحد (لغة عربيّة ولغة إنجليزيّة).</li>
+          <li><strong>الصفوف (1 – 8):</strong> اللغة العربيّة هي لغة التدريس الأساسيّة، وتدرَّس الإنجليزيّة بمعدّل 7 حصص أسبوعيًّا. ومن الصفّ الخامس، تُدرَّس العلوم بالإنجليزيّة بمعدّل حصّتين أسبوعيًّا.</li>
+          <li><strong>الصفوف (9 – 12):</strong> يكون التدريس بالعربيّة أو الإنجليزيّة حسب اختيار الطالب/ة لبرنامجه: الوطنيّ أو الدوليّ.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PART 3 -->
+    <section class="part" id="resources">
+      <div class="part-head"><span class="part-num">٣</span><h2>الدعم والرعاية</h2></div>
+
+      <article class="sec">
+        <h3>قسم المصادر التعليميّة</h3>
+        <p>توفّر مدرسة عمّان الوطنيّة بيئةً تعليميّةً آمنةً دامجةً مُثرِيةً تراعي الفروقات الفرديّة، وتحتضن طلبتها جميعًا على اختلاف قدراتهم واحتياجاتهم، إيمانًا بأنّ لكلّ طالب الحقّ في التعلّم والنموّ ضمن بيئة تحترم خصوصيّته. يقدّم القسم خدماته من خلال برنامجين:</p>
+
+        <h4>أوّلًا: البرنامج المساند</h4>
+        <p>يهدف إلى تلبية احتياجات الطلبة الذين يواجهون تحدّيات في التعلّم، حيث يُحال الطالب إلى القسم عند ملاحظة صعوبات لديه، لإجراء تقييم شامل وتحديد نوع التدخّل المناسب. عند الحاجة، تتعاون المدرسة مع جهات خارجيّة مختصّة بعد موافقة أولياء الأمر، بوصفهم شركاء أساسيّين في القرار. يشرف على البرنامج فريق مؤهّل من معلّمي التربية الخاصّة من خلال:</p>
+        <ul>
+          <li><strong>دروس تقوية اللغة:</strong> لتعزيز مهارات اللغة العربيّة أو الإنجليزيّة.</li>
+          <li><strong>البرنامج المساند داخل الصفّ:</strong> دعم فرديّ أو ضمن مجموعات صغيرة.</li>
+          <li><strong>البرنامج المساند في غرفة المصادر:</strong> دعم وفق خطط تعلّم فرديّة تُقيَّم وتُراجَع بانتظام.</li>
+        </ul>
+
+        <h4>ثانيًا: عناقيد الإثراء</h4>
+        <p>أنشطة لامنهجيّة يديرها الطلبة، ويشرف عليها أعضاء من الهيئة التدريسيّة أو المجتمع المحلّيّ، تجمع طلبةً من أعمار مختلفة تشترك في اهتمامات ومهارات متنوّعة. من خلال العمل التشاركيّ والتخطيط وحلّ المشكلات، ينفّذ الطلبة مشاريع للوصول إلى منتج أو عرض أو خدمة حقيقيّة لجمهور حقيقيّ.</p>
+      </article>
+
+      <article class="sec" id="academic-guidance">
+        <h3>الإرشاد الأكاديميّ</h3>
+        <p>يقدّم قسم الإرشاد الأكاديميّ خدمات فرديّة وجماعيّة لطلبة الصفوف التاسع إلى الثاني عشر، لمساعدتهم على اكتشاف ميولهم الأكاديميّة والعمليّة من خلال أنشطة مثل "يوم المهن" وفرص تدريب وعمل. كما يساعد الطلبة على اختيار برنامجهم الأكاديميّ، ويوفّر معلومات عن الجامعات ولقاءات مع ممثّليها، ويساعد في تقديم طلبات الالتحاق بالجامعات والمنح.</p>
+      </article>
+
+      <article class="sec" id="psychosocial">
+        <h3>الرعاية النفسيّة والاجتماعيّة</h3>
+        <p>تؤمن المدرسة بدورها المحوريّ في التطوّر العاطفيّ والاجتماعيّ للطلبة، فيراعي المنهاج اكتساب المهارات النفسيّة-الاجتماعيّة وفق كلّ مرحلة عمريّة، عبر حصص الحلقة الصباحيّة في المراحل الدنيا وحصص التوجيه في المراحل العليا.</p>
+        <p>تضمّ المدرسة ثلاث مرشدات متخصّصات للصفوف من الأوّل حتّى الثاني عشر، يعملن بالشراكة مع الهيئة التدريسيّة وأولياء الأمر، وتختلف أساليب التدخّل حسب طبيعة الحالة: من الملاحظة والمشورة، إلى الجلسات الفرديّة أو الجماعيّة، والخطط السلوكيّة، والإحالة لجهات خارجيّة عند الحاجة.</p>
+        <div class="note">لا يُتوقَّع من المرشدة إعلام أولياء الأمر بكلّ تدخّل أو اتّصال، لكنّها تبلغهم بما يمسّ الصحّة النفسيّة للطالب أو ما يتطلّب متابعتهم. للتواصل، يُترَك رسالة لدى موظّفة الاستقبال تتضمّن اسم وليّ الأمر ورقم هاتفه واسم الطالب، وستُعاوَد الاتّصال في أقرب فرصة.</div>
+      </article>
+
+      <article class="sec" id="health">
+        <h3>الرعاية الصحّيّة والإصابات خلال الدوام المدرسيّ</h3>
+        <p>يُتوقَّع من الطلبة الحضور مستعدّين للتعلّم من حيث ساعات النوم الكافية وتناول فطور صحّيّ. توفّر المدرسة طبيبًا مقيمًا وممرّضة مقيمة من الساعة 7:30 صباحًا حتّى 3:30 عصرًا.</p>
+        <ul>
+          <li>يُكشَف على الطلبة الذين يشعرون بالمرض، وقد يتّصل مدير/ة المرحلة بأولياء الأمر لاصطحابهم حسب إرشادات الطبيب.</li>
+          <li>يجب إخطار المدرسة خطّيًّا بأيّ أمراض مزمنة والعلاجات اللازمة؛ ويتحمّل الأهل مسؤوليّة أيّ مضاعفات لم تُبلَّغ المدرسة بها مسبقًا.</li>
+          <li>أيّ طالب تظهر عليه حرارة يتغيّب حتّى تختفي الأعراض وتمرّ 24 ساعة دون حرارة.</li>
+          <li>تتوفّر في العيادة أدوية الإسعافات الأوّليّة والحالات الطارئة فقط، وليس لعلاج الأمراض. تُسلَّم أدوية الطلبة لطبيب المدرسة، ويُمنع احتفاظهم بأيّ دواء.</li>
+          <li>يُجري طبيب المدرسة فحصًا دوريًّا للقمل، وعند اكتشاف إصابة يُبلَّغ أولياء أمور الصفّ المعنيّ ويُعاد الطالب المصاب إلى المنزل.</li>
+          <li>الحالات الطارئة تُحوَّل لأقرب مستشفى خاصّ مع إبلاغ وليّ الأمر؛ أمّا غير الطارئة فيُنسَّق مع وليّ الأمر لتحديد جهة المتابعة.</li>
+          <li>عند الحاجة لإجراء طبّيّ (تجبير، غرز...) يجب حضور وليّ الأمر أو من ينوب عنه للموافقة على الإجراء.</li>
+          <li>يُتواصَل مع وليّ الأمر للحصول على موافقته قبل الكشف عن مناطق خاصّة نتيجة شكوى أو إصابة.</li>
+          <li>يغطّي التأمين تكاليف الحوادث داخل الحرم المدرسيّ وخلال الأنشطة بحدّ أقصى (1000) دينار للحالة الواحدة، وتُسلَّم الفواتير مع تقرير طبّيّ لقسم شؤون الطلبة.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PART 4 -->
+    <section class="part" id="sustainability">
+      <div class="part-head"><span class="part-num">٤</span><h2>الحياة المدرسيّة</h2></div>
+
+      <article class="sec">
+        <h3>التنمية المستدامة في المدرسة</h3>
+        <p>تتبنّى المدرسة نهجًا متكاملًا للتنمية المستدامة يشمل ممارسات بيئيّة ومسؤوليّات مجتمعيّة وإداريّة، عبر محاور: المياه (ترشيد الاستهلاك وتجميع مياه الأمطار)، الطاقة (الطاقة الشمسيّة وترشيد الاستهلاك)، النفايات (الحدّ منها والتدوير)، التنوّع الحيويّ (زيادة المساحات الخضراء)، المواصلات (تحسين كفاءة الحافلات)، الحياة الصحّيّة، المواطنة العالميّة، والتغيّر المناخيّ. تُنفَّذ هذه المحاور عبر المناهج الدراسيّة، وإدارة الموارد، واستغلال المساحات.</p>
+      </article>
+
+      <article class="sec" id="class-distribution">
+        <h3>توزيع الطلبة على الشُعَب</h3>
+        <p>تعيد المدرسة توزيع الطلبة على الشُعَب سنويًّا وفق معايير مدروسة، لإتاحة التعرّف إلى زملاء جدد وخبرات متنوّعة. يُطلَب من الطلبة في نهاية كلّ عام كتابة أسماء زملاء يرغبون بمرافقتهم، ويُراعى وجود واحد منهم على الأقلّ في شعبتهم الجديدة.</p>
+        <div class="warn">تعتذر المدرسة عن قبول أيّ تدخّل من الأهل بخصوص توزيع الطلبة على الشُعَب، أو اختيار مربّية الصفّ أو المعلّمات.</div>
+      </article>
+
+      <article class="sec" id="library">
+        <h3>المكتبة المدرسيّة</h3>
+        <p>تخدم المكتبة المجتمع المدرسيّ بأكمله من الروضة حتّى الثانويّ، وتحتوي على ما يقارب 20,000 كتاب باللغتين العربيّة والإنجليزيّة. يُسمح للطلبة باستعارة كتابين على الأقلّ أسبوعيًّا (عربيّ وإنجليزيّ)، ويُرحَّب بأولياء الأمر لاستعارة الكتب والمراجع.</p>
+        <div class="note">يتحمّل وليّ الأمر تسديد أثمان الكتب غير المعادة.</div>
+      </article>
+
+      <article class="sec" id="story-committee">
+        <h3>لجنة تقييم القصص الصفّيّة</h3>
+        <p>تضمّ اللجنة أمينات المكتبة ومجموعة من أولياء الأمر، وتراجع القصص والكتب بعناية وموضوعيّة للتأكّد من توافقها مع القيم التربويّة والأخلاقيّة للمدرسة، مع مراعاة الفئة العمريّة المستهدَفة، لاتّخاذ قرار مناسب بشأن إبقاء الكتب أو استبعادها.</p>
+      </article>
+
+      <article class="sec" id="technology">
+        <h3>استخدام التكنولوجيا</h3>
+        <p>تسعى المدرسة لاستخدام التكنولوجيا بما يتناسب مع المرحلة العمريّة، موازنةً بين الخبرات الملموسة والإلكترونيّة.</p>
+        <ul>
+          <li>في الروضة والمرحلة الابتدائيّة الدنيا، الاستخدام محدود ويقتصر على مشاريع محدّدة بإشراف المعلّمة.</li>
+          <li>من الصفّ الرابع، يبدأ الطلبة تعلّم الحاسوب والطباعة باللغتين، ويُتوقَّع منهم إحضار أجهزتهم الخاصّة (يُرجى مراجعة سياسة التكنولوجيا للصفوف 4 فما فوق).</li>
+        </ul>
+      </article>
+
+      <article class="sec" id="trips">
+        <h3>الرحلات المدرسيّة</h3>
+        <p>تُعدّ الرحلات جزءًا من المنهاج، وتشمل رحلات "اعرف وطنك" ابتداءً من الصفّ الرابع لزيارة مواقع أثريّة وتاريخيّة وسياحيّة. يوقّع أولياء الأمر موافقة ورقيّة لكلّ رحلة؛ وفي حال عدم الموافقة يتغيّب الطالب عن الدوام.</p>
+        <ul>
+          <li>تُطبَّق تعليمات الانضباط وميثاق السلوك خلال الرحلات. يُمنع إحضار الهواتف الخلويّة، ويُسمح بالكاميرات في الرحلات الخارجيّة فقط.</li>
+          <li>عدم الالتزام بتعليمات الرحلة قد يؤدّي إلى حرمان الطالب من رحلات أو نشاطات لاحقة.</li>
+          <li>عند امتداد الرحلة خارج أوقات الدوام، يُتوقَّع من الأهل اصطحاب أبنائهم في الوقت المحدّد.</li>
+          <li>يُسمح أحيانًا بمشاركة أولياء الأمر في الرحلات وفق تعليمات "مشاركة أولياء الأمر في الأنشطة المدرسيّة".</li>
+        </ul>
+      </article>
+
+      <article class="sec" id="sports">
+        <h3>المنتخبات الرياضيّة</h3>
+        <p>تُشجَّع المدرسة الطلبة من الصفّ الخامس فما فوق على المشاركة في تجارب الأداء لاختيار طلبة المنتخبات (كرة القدم، كرة السلّة، الكرة الطائرة، الشطرنج)، ضمن معايير واضحة يقيّمها معلّمو ومدرّبو التربية الرياضيّة. تكون التدريبات عادةً بعد الدوام الرسميّ، وأيّام السبت بين الساعة 9 صباحًا و1 ظهرًا.</p>
+        <p>تتوفّر مواصلات مجّانيّة للمشتركين بخدمة المواصلات، ومقابل مبلغ محدّد لغيرهم، بما في ذلك يوم السبت. يلتزم طلبة المنتخبات بما يأتي:</p>
+        <ul>
+          <li>حضور جميع أيّام التدريب والمباريات؛ تغيّب متكرّر (3 مرّات دون عذر) يمنح المدرسة حقّ الفصل من الفريق.</li>
+          <li>الحضور في الوقت المحدّد وعدم المغادرة قبل انتهاء التدريب.</li>
+          <li>عدم مغادرة حرم المدرسة قبل أو أثناء التدريب أو فترة انتظار الأهل.</li>
+          <li>التعاون التامّ مع المدرّب وبقيّة الفريق، والالتزام بالأخلاق الرياضيّة وميثاق السلوك العامّ.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PART 5 -->
+    <section class="part" id="homework">
+      <div class="part-head"><span class="part-num">٥</span><h2>المهامّ البيتيّة والتقويم والتقارير</h2></div>
+
+      <article class="sec">
+        <h3>المهامّ البيتيّة</h3>
+        <p>تؤمن المدرسة بأنّ المهامّ البيتيّة وسيلة لتعزيز التعلّم وتنظيم الوقت وتحمّل المسؤوليّة، على ألّا تكون عبئًا على الطلبة وعائلاتهم. تزداد التوقّعات تدريجيًّا مع تقدّم الطلبة في الصفوف. يُرجى تأمين مكان مناسب لحلّ المهامّ دون التدخّل في العمل نفسه، وتشجيع الطلبة على التواصل مباشرة مع معلّميهم عند الحاجة.</p>
+        <table class="simple">
+          <thead><tr><th>المرحلة</th><th>المهامّ البيتيّة (يوميًّا)</th><th>القراءة اليوميّة</th></tr></thead>
+          <tbody>
+            <tr><td>الروضة</td><td>لا يوجد</td><td>—</td></tr>
+            <tr><td>الصفوف 1–2</td><td>~10 دقائق</td><td>5–15 دقيقة</td></tr>
+            <tr><td>الصفوف 3–4</td><td>~15 دقيقة</td><td>10–20 دقيقة</td></tr>
+            <tr><td>الصفوف 5–6</td><td>~30 دقيقة</td><td>15–25 دقيقة</td></tr>
+            <tr><td>الصفوف 7–8</td><td>~60 دقيقة</td><td>20–30 دقيقة</td></tr>
+            <tr><td>الصفوف 9–12</td><td>تختلف حسب الموادّ</td><td>—</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.85rem; color:#5a6a78;">الأوقات تقريبيّة، مع فروقات فرديّة، ولا تشمل يومي الخميس والجمعة.</p>
+      </article>
+
+      <article class="sec" id="assessment">
+        <h3>التقويم</h3>
+        <p>يؤمن الفريق التربويّ بأنّ التقويم عمليّة مستمرّة فعّالة تعزّز معرفة الطلبة وتوجّه المعلّمين. تتزايد التوقّعات تدريجيًّا مع تقدّم الطلبة في السنّ. سياسة التقويم الكاملة متوفّرة على الموقع الإلكترونيّ للمدرسة.</p>
+        <ul>
+          <li><strong>الروضة – الثالث الأساسيّ:</strong> تقويم عبر العمل اليوميّ والمشاريع والاختبارات التشخيصيّة الفرديّة، مع تغذية راجعة فرديّة ودون اختبارات رسميّة تحتاج تحضيرًا خاصًّا.</li>
+          <li><strong>الرابع والخامس:</strong> يُضاف تدريجيًّا اختبارات في بعض الموادّ، مع بعض المراجعة المستقلّة في المنزل.</li>
+          <li><strong>السادس – العاشر (برنامج MYP):</strong> يتبع تقويم برنامج البكالوريا للسنوات المتوسّطة؛ ولا يتقدّم طلبة الصفّ العاشر إلى التقييمات الإلكترونيّة (e-assessments).</li>
+          <li><strong>الحادي عشر والثاني عشر:</strong> حسب البرنامج المتّبع (وطنيّ أو دوليّ).</li>
+        </ul>
+        <div class="note">إذا ارتأت المدرسة أنّ أحد الطلبة يحتاج دعمًا إضافيًّا، تتواصل مع أولياء الأمر وقسم التربية الخاصّة لتقرير أفضل السبل لدعمه.</div>
+      </article>
+
+      <article class="sec" id="reports">
+        <h3>التقارير المدرسيّة</h3>
+        <ul>
+          <li>الروضة: تقريران في السنة، عند انتهاء كلّ فصل دراسيّ.</li>
+          <li>الصفوف (1–6): تقريران في الفصل الواحد — منتصف الفصل ونهايته.</li>
+          <li>الصفوف (7–12): ثلاثة تقارير في الفصل — اثنان خلاله وتقرير نهاية الفصل.</li>
+          <li>تُرسَل التقارير إلكترونيًّا عبر منظومة إديونيشن في الموعد المحدّد بالتقويم المدرسيّ.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PART 6 -->
+    <section class="part" id="attendance-hours">
+      <div class="part-head"><span class="part-num">٦</span><h2>الدوام والانضباط</h2></div>
+
+      <article class="sec">
+        <h3>الدوام المدرسيّ وأوقاته</h3>
+        <p>تُطبَّق قوانين الانضباط الخاصّة بالمدرسة في حال تكرار التأخّر. ينتظر المناوب المسؤول 15 دقيقة فقط بعد انتهاء الدوام، ويتحمّل وليّ الأمر المسؤوليّة بعدها. في حال الأحوال الجوّيّة السيّئة أو الطوارئ، تُبلَّغ التعديلات عبر الرسائل النصّيّة (SMS).</p>
+        <table class="simple">
+          <thead><tr><th>المرحلة</th><th>وقت الدوام</th><th>بدء الاستقبال</th></tr></thead>
+          <tbody>
+            <tr><td>الروضة</td><td>8:30 ص – 1:00 ظ</td><td>7:30 ص</td></tr>
+            <tr><td>الصفوف 1–3</td><td>8:00 ص – 2:15 ظ</td><td>7:30 ص</td></tr>
+            <tr><td>الصفوف 4–10</td><td>8:00 ص – 2:20 ظ</td><td>7:30 ص</td></tr>
+            <tr><td>الصفوف 11–12</td><td>8:00 ص – 3:30 ظ</td><td>7:30 ص</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="sec" id="absence">
+        <h3>التغيّب</h3>
+        <p>يُتوقَّع من أولياء الأمر الحرص على الدوام، وعدم التغيّب إلّا لحالات مرضيّة أو طارئة استثنائيّة. تُطبَّق تعليمات وزارة التربية والتعليم الخاصّة بالغياب (المادّة 22):</p>
+        <ul>
+          <li>لا يجوز أن تتجاوز نسبة الغياب (بعذر أو دونه) 10% من أيّام الدوام (30% لذوي الإعاقة).</li>
+          <li>تُبلِّغ إدارة المدرسة وليّ الأمر بالغياب، دون أن يؤثّر التبليغ من عدمه في قرار الرسوب بسبب تجاوز النسبة المسموحة.</li>
+          <li>تعويض الدروس والاختبارات يكون فقط في حال الغياب المرضيّ المرفق بتقرير طبّيّ.</li>
+          <li>يُمنع إرسال الطلبة إلى المدرسة عند ظهور أعراض مرضيّة، حفاظًا على سلامتهم وسلامة زملائهم.</li>
+          <li>يُرجى مراعاة التقويم السنويّ عند التخطيط للسفر، والحصول على إذن وزارة التربية للسفر خلال اختبارات نهاية الفصل.</li>
+        </ul>
+      </article>
+
+      <article class="sec" id="pass-fail">
+        <h3>النجاح والإكمال والرسوب</h3>
+        <p>وفق المادّة الثامنة من تعليمات وزارة التربية والتعليم (للصفوف من الرابع الأساسيّ حتّى الثاني عشر):</p>
+        <ul>
+          <li><strong>النجاح:</strong> الحصول على 50% فأكثر من علامة كلّ مبحث، مع استيفاء مدّة الدوام القانونيّة.</li>
+          <li><strong>الإكمال:</strong> التقصير في ثلاثة مباحث فما دون، مع التقدّم لامتحان الإكمال قبل سبعة أيّام من بدء العام الجديد.</li>
+          <li><strong>الرسوب:</strong> التقصير في أربعة مباحث فأكثر، أو الرسوب في أحد امتحانات الإكمال، أو تجاوز نسبة الغياب المسموحة.</li>
+        </ul>
+      </article>
+
+      <article class="sec" id="departure">
+        <h3>المغادرة خلال الدوام المدرسيّ</h3>
+        <ul>
+          <li>عند الاضطرار لاصطحاب الأبناء قبل انتهاء الدوام، يحصل الطالب على نموذج مغادرة مختوم وموقّع من مدير/ة المرحلة، ويُسلَّم لمراقب البوّابة عند الخروج.</li>
+          <li>يجب الاتّصال بسكرتيرة مدير/ة المرحلة قبل الساعة 12:00 ظهرًا للحصول على إذن رسميّ.</li>
+        </ul>
+      </article>
+
+      <article class="sec" id="gates">
+        <h3>دخول وخروج الطلبة من الحرم المدرسيّ</h3>
+        <table class="simple">
+          <thead><tr><th>الصفّ</th><th>البوّابة</th></tr></thead>
+          <tbody>
+            <tr><td>الروضة</td><td>بوّابة 3 (مدخل خاصّ بالروضة)</td></tr>
+            <tr><td>الأوّل – الثالث</td><td>بوّابة 2 (المدخل الرئيس)</td></tr>
+            <tr><td>الرابع – السادس</td><td>بوّابة 7 (الشارع الفرعيّ خلف كوزمو)</td></tr>
+            <tr><td>السابع – الثامن</td><td>بوّابة 2 (المدخل الرئيس)</td></tr>
+            <tr><td>التاسع</td><td>بوّابة 7 (الشارع الفرعيّ خلف كوزمو)</td></tr>
+            <tr><td>العاشر – الحادي عشر</td><td>بوّابة 2 (المدخل الرئيس)</td></tr>
+            <tr><td>الثاني عشر</td><td>بوّابة 7 (الشارع الفرعيّ خلف كوزمو)</td></tr>
+          </tbody>
+        </table>
+        <div class="note">الإخوة الذين يبدأ دوامهم في الوقت نفسه يدخلون ويخرجون من البوّابة المخصّصة للصفّ الأصغر بينهم.</div>
+      </article>
+
+      <article class="sec" id="b12">
+        <h3>تطبيق "B12"</h3>
+        <p>تستخدم المدرسة تطبيق "B12" لمساعدة أولياء أمور طلبة الروضة حتّى السادس الأساسيّ الذين يصطحبون أبناءهم بأنفسهم، إذ يتيح التطبيق طلب توجّه الابن إلى البوّابة، ممّا يسهّل الاصطحاب ويقلّل الازدحام. يُشترط وجود وليّ الأمر ضمن نطاق جغرافيّ محدّد حول المدرسة، وتُزوَّد التفاصيل الكاملة بداية كلّ عام دراسيّ.</p>
+      </article>
+
+      <article class="sec" id="entry-exit-procedures">
+        <h3>إجراءات الدخول والخروج</h3>
+        <h4>عند الدخول</h4>
+        <ul>
+          <li>تفتح الأبواب الساعة 7:30 صباحًا، ولا يوجد مشرفون مسؤولون قبل ذلك.</li>
+          <li>يُمنع إنزال الطلبة على الشارع الرئيس؛ ينزلون عند البوّابة المخصّصة فقط.</li>
+          <li>الجرس الأوّل الساعة 7:55 صباحًا. تُغلَق بوّابة 7 الساعة 8:05، وبوّابة 3 الساعة 8:40، ويدخل الطلبة بعدها من بوّابة 2.</li>
+          <li>عند التأخّر لحالة طارئة، يراجع الطالب قسم الاستقبال لاستلام إذن الدخول، ثمّ مدير/ة المرحلة للتوقيع.</li>
+          <li>يُبلَّغ سكرتيرة المرحلة قبل الساعة 8:30 صباحًا في حال الغياب أو التأخّر، مع بيان السبب.</li>
+        </ul>
+        <h4>عند الخروج</h4>
+        <ul>
+          <li>أيّ تغيير على مواصلات المغادرة يتطلّب ملاحظة خطّيّة موقّعة أو اتّصالًا هاتفيًّا قبل الساعة 12:00 ظهرًا، وإلّا تعتذر المدرسة عن تلبية الطلب.</li>
+          <li>يُمنع الطلبة غير المشتركين بخدمة المواصلات من المغادرة مع زملائهم المشتركين.</li>
+          <li>يُسمح لطلبة الصفوف من السابع حتّى الثاني الثانويّ بمغادرة الحرم بمفردهم بعد الدوام.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PART 7 -->
+    <section class="part" id="meals">
+      <div class="part-head"><span class="part-num">٧</span><h2>الحياة اليوميّة</h2></div>
+
+      <article class="sec">
+        <h3>وجبات الطلبة</h3>
+        <p>تحرص المدرسة على تنمية العادات الغذائيّة الصحّيّة، وتتوقّع من الأهل إرسال وجبات ومأكولات صحّيّة. يُرجى إخطار المساعدة الإداريّة لشؤون الطلبة بأيّ اعتبارات غذائيّة خاصّة أو حساسيّة.</p>
+        <div class="warn">يُمنع إحضار الرقائق (Chips) والسكاكر (Candy)، والمشروبات أو الأطعمة بعبوات زجاجيّة، ومشروبات الطاقة نهائيًّا (وستُصادَر عند ضبطها). كما يُمنع إحضار أطعمة لمشاركتها في أعياد الميلاد والمناسبات إلّا إذا طلبت المدرسة ذلك.</div>
+      </article>
+
+      <article class="sec" id="cafeteria">
+        <h3>المقصف</h3>
+        <p>يخدم مقصف المدرسة الصفوف من الأوّل حتّى الثاني عشر، ويقدّم وجبات باردة وساخنة وفق برنامج أسبوعيّ، مع خيارات صحّيّة ومتنوّعة تبتعد عن الأصناف المصنّعة، وحلويّات بوصفات صحّيّة، وعصائر طبيعيّة موسميّة وفاكهة — جميعها منتجات وطنيّة. يُرسَل برنامج الوجبات الساخنة أسبوعيًّا، ويمكن الدفع نقدًا أو إلكترونيًّا (السوار أو البطاقة).</p>
+      </article>
+
+      <article class="sec" id="celebrations">
+        <h3>الاحتفال بالأعياد والمناسبات</h3>
+        <p>تحتفل المدرسة بالأعياد الدينيّة والوطنيّة، ومناسبات مهمّة مثل شهر المكتبة المدرسيّة العالميّ، واليوم العالميّ للّغة العربيّة، واحتفالات نهاية الفصل أو العام. تُشجَّع مشاركة أولياء الأمر بهذه الاحتفالات.</p>
+        <div class="warn">يُمنع تقديم الهدايا للهيئتين الإداريّة والتدريسيّة بأيّ مناسبة، ويُمنع إرسال أو مشاركة الأطعمة، ويُمنع تبادل الهدايا بين الطلبة.</div>
+      </article>
+
+      <article class="sec" id="uniform">
+        <h3>الزيّ المدرسيّ</h3>
+        <p>الزيّ إلزاميّ للصفوف من الأوّل حتّى الحادي عشر. لا يُسمح لطلبة الصفوف من الرابع حتّى الحادي عشر بدخول الصفّ في حال مخالفة الزيّ بعد الأسبوع الأوّل من الدوام؛ وسيُتّصَل بوليّ الأمر لإحضار الزيّ أو اصطحاب الطالب.</p>
+        <ul>
+          <li>يُمنع استخدام مستحضرات التجميل وطلاء الأظافر.</li>
+          <li>يُمنع ارتداء الأحذية المفتوحة غير الثابتة (الحفّايات، الشحّاطات، الكروكس).</li>
+          <li>يُمنع ارتداء المجوهرات والحليّ الثمينة أو إحضارها، ويتحمّل الأهل مسؤوليّة فقدانها.</li>
+        </ul>
+      </article>
+
+      <article class="sec" id="property">
+        <h3>الممتلكات المدرسيّة</h3>
+        <p>يُتوقَّع من الطلبة المحافظة على المرافق والممتلكات. يسدّد الطلبة ثمن ما يتلفونه نتيجة سوء الاستخدام أو الإضرار المتعمّد؛ وعند عدم التسديد يُخصَم المبلغ من التأمينات المستردّة.</p>
+      </article>
+
+      <article class="sec" id="lost-found">
+        <h3>المفقودات</h3>
+        <ul>
+          <li>المدرسة غير مسؤولة عن فقدان مبالغ ماليّة أو مقتنيات شخصيّة لا تتعلّق بالأمور المدرسيّة.</li>
+          <li>يُنصَح بكتابة أسماء الطلبة على الممتلكات الشخصيّة (الزيّ، الجاكيتات، الحقائب...) لتسهيل إعادتها.</li>
+          <li>تُراجَع موظّفة الاستقبال للاستفسار عن المفقودات، وتُوهَب المفقودات غير المستلَمة بعد نهاية العام.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PART 8 -->
+    <section class="part" id="campus-access">
+      <div class="part-head"><span class="part-num">٨</span><h2>التواصل مع الأهل</h2></div>
+
+      <article class="sec">
+        <h3>دخول أولياء الأمر إلى الحرم المدرسيّ</h3>
+        <p>حفاظًا على أمن الطلبة، يراجع أولياء الأمر مراقب البوّابة رقم (2) قبل الدخول لاستلام بطاقة الدخول المستردّة، وتُراجَع موظّفة الاستقبال للمساعدة. جميع مرافق المدرسة خالية من التدخين.</p>
+      </article>
+
+      <article class="sec" id="communication">
+        <h3>التواصل بين المدرسة وأولياء الأمر</h3>
+        <p>تشجّع المدرسة التواصل المستمرّ، وترحّب بالملاحظات والأسئلة، وتتوقّع من أولياء الأمر متابعة أداء أبنائهم من خلال:</p>
+        <div class="grid2">
+          <div>
+            <h4>اليوم المفتوح</h4>
+            <p>في بداية العام، للتعرّف إلى الهيئة التدريسيّة ومتطلّبات البرامج، ويُنتخَب فيه وليّ الأمر المساعد.</p>
+          </div>
+          <div>
+            <h4>الاجتماعات العامّة</h4>
+            <p>اجتماعان خلال العام (ثلاثة للروضة) لبحث التطوّر الأكاديميّ والاجتماعيّ والنفسيّ لكلّ طالب.</p>
+          </div>
+          <div>
+            <h4>اجتماعات خاصّة</h4>
+            <p>بموعد مسبق مع أعضاء الهيئة التدريسيّة أو مديري المراحل.</p>
+          </div>
+          <div>
+            <h4>النشرة الصفّيّة الأسبوعيّة</h4>
+            <p>للروضة حتّى السادس، لمشاركة الأعمال الصفّيّة والتذكير بالمواعيد المهمّة.</p>
+          </div>
+          <div>
+            <h4>نظام إديونيشن (Edunation)</h4>
+            <p>لمتابعة الأداء الأكاديميّ والسلوكيّ والتواصل مع المعلّمين عبر الرسائل.</p>
+          </div>
+          <div>
+            <h4>التعميمات والبريد الإلكترونيّ</h4>
+            <p>عبر إديونيشن والبريد الإلكترونيّ؛ يُرجى تحديث البريد ومتابعته دوريًّا.</p>
+          </div>
+          <div>
+            <h4>الرسائل النصّيّة</h4>
+            <p>للأمور المستعجلة فقط.</p>
+          </div>
+          <div>
+            <h4>الاتّصالات الهاتفيّة</h4>
+            <p>خلال أوقات الدوام الرسميّ فقط؛ جميع المكالمات مسجّلة لضبط الجودة.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="sec" id="participation">
+        <h3>مشاركة أولياء الأمر في الأنشطة المدرسيّة</h3>
+        <p>تؤمن المدرسة أنّ العلاقة الإيجابيّة القائمة على الاحترام والثقة والصراحة أساس نجاح المسيرة التعليميّة. فرص المشاركة تشمل: المساعدة والتطوّع داخل الصفّ، المساعدة في الرحلات والنشاطات، المشاركة في عروض الطلبة، إعطاء حصص عناقيد، التطوّع في المكتبة، وإعطاء محاضرات في مجالات مختلفة.</p>
+        <p>عند المشاركة، يُرجى مراعاة:</p>
+        <ul>
+          <li>الوصول في الوقت المحدّد، وإعطاء الاهتمام للمجموعة كاملةً وليس فقط للابن أو الابنة.</li>
+          <li>التصرّف بما يليق بصرح تربويّ: عدم التدخين، عدم الحديث عن الطلبة، ومراعاة نبرة الصوت والمفردات.</li>
+          <li>عدم اصطحاب أبناء أصغر سنًّا أو من صفوف أخرى، واتّباع إرشادات المعلّمة أو المسؤولة.</li>
+          <li>عدم تصوير الطلبة، ومناقشة أيّ ملاحظات بعد العودة للمدرسة وليس أمام الطلبة.</li>
+          <li>الإبلاغ الفوريّ عن أيّ موقف يشكّل خطرًا.</li>
+        </ul>
+      </article>
+
+      <article class="sec" id="helper-parent">
+        <h3>وليّ الأمر المساعد</h3>
+        <p>إيمانًا بضرورة التكامل بين الأسرة والمدرسة، تُشرِف المدرسة على انتخاب أمّ مساعدة/أب مساعد لكلّ شعبة، ليكون حلقة وصل بين المدرسة وأولياء الأمر. الوظيفة تطوّعيّة، والترشّح مفتوح لجميع أولياء الأمر الحاضرين في اليوم المفتوح.</p>
+        <div class="grid2">
+          <div>
+            <h4>المتطلّبات</h4>
+            <ul>
+              <li>الاقتناع بفلسفة المدرسة.</li>
+              <li>المرونة وتوفير الوقت الكافي.</li>
+              <li>تحمّل المسؤوليّة.</li>
+              <li>القدرة على إدارة الحوار بمهنيّة.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>المسؤوليّات</h4>
+            <ul>
+              <li>الاطّلاع على التعليمات المدرسيّة وميثاق السلوك والإلمام بهما.</li>
+              <li>تذكير أولياء الأمر بالتعليمات والبنود عند الحاجة.</li>
+              <li>تشجيع المشاركة في الأنشطة المدرسيّة، والتنسيق مع أولياء الأمر لدعمها.</li>
+              <li>عدم إعادة إرسال النشرات؛ يتابع أولياء الأمر الواجبات عبر إديونيشن مباشرة.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="sec" id="social-media">
+        <h3>شبكات التواصل الاجتماعيّ</h3>
+        <p>تتوقّع المدرسة الالتزام بميثاق السلوك في استخدام شبكات التواصل، بما يشمل عدم الإساءة لأسرة المدرسة (عاملين وأولياء أمر)، وعدم مشاركة صور الطلبة على مواقع التواصل حفاظًا على خصوصيّتهم. تُشكَّل مجموعات واتساب لكلّ صفّ من قِبل الأمّ/الأب المساعدة بخاصيّة الإرسال من المشرف فقط.</p>
+      </article>
+    </section>
+
+    <!-- APPENDIX 1: BUSES -->
+    <section class="part" id="appendix-buses">
+      <div class="part-head"><span class="part-num">ملحق ١</span><h2>تعليمات استخدام حافلات المدرسة</h2></div>
+
+      <article class="sec">
+        <p>توفّر المدرسة حافلات مرتبطة بنظام تعقّب إلكترونيّ لنقل الطلبة من المدرسة وإليها. يمكن للطلبة الاشتراك في المواصلات ذهابًا وإيابًا، أو في اتّجاه واحد فقط. ترافق كلّ حافلة مشرفة مسؤولة عن سلامة الطلبة، ويُتوقَّع من أولياء الأمر توعية أبنائهم حول أهمّيّة احترام تعليمات الحافلة والمشرفين عليها.</p>
+
+        <h3>الجولات والمواعيد</h3>
+        <ul>
+          <li>ينتظر الطلبة المشتركون الحافلة في الوقت المحدّد صباحًا.</li>
+          <li>يُتوقَّع وصول الحافلات إلى أوّل نقطة في الجولة الساعة 6:40 صباحًا (6:30 للمناطق البعيدة، ويُعلَم وليّ الأمر مسبقًا).</li>
+          <li>تنتظر الحافلة الطالب صباحًا دقيقة واحدة كحدّ أقصى، حتّى لا يتأثّر برنامج الجولة.</li>
+          <li>تتبع الجولة مسارًا محدّدًا، ولا تعمل حسب الفئة العمريّة للطلبة.</li>
+          <li>يُتوقَّع اختلاف في مواعيد الوصول إلى المنازل في بداية العام الدراسيّ.</li>
+          <li>تستغرق الجولة من ساعة إلى ساعة ونصف.</li>
+          <li>تتحرّك الحافلات بعد عشر دقائق من انتهاء الدوام، ولن تنتظر طلبة الصفوف (7–12). تتواصل المدرسة فقط مع أولياء أمور الصفوف (7–9) بشأن تخلّفهم عن الجولة.</li>
+        </ul>
+
+        <h3>قواعد الاشتراك والعنوان</h3>
+        <ul>
+          <li>يُمنع تغيير الحافلة، أو إيصال الطلبة إلى غير منازلهم، أو إنزالهم على الطريق.</li>
+          <li>يُمنع استخدام الحافلة على أيّ طالب غير مسجَّل فيها.</li>
+          <li>يُحدَّد عنوان ثابت للاصطحاب يوميًّا. عند تغيير العنوان، يتأكّد مشرف الحركة من أنّ السكن الجديد مخدوم؛ وتُعاد باقي رسوم الاشتراك إن كانت المنطقة الجديدة غير مخدومة.</li>
+          <li>توفّر خدمة الجولات اليوميّة لا يعني توفّرها لجولات الأنشطة، خصوصًا عند تغيير العنوان المسائيّ بعد بدء النشاط.</li>
+          <li>يُمنع تغيير مكان عودة الطلبة؛ يكون الإيصال إلى العنوان نفسه يوميًّا.</li>
+        </ul>
+
+        <h3>التسليم والاستلام</h3>
+        <ul>
+          <li>يُتوقَّع من أولياء أمور طلبة الروضة حتّى الثالث الأساسيّ (أو من ينوب عنهم) تسليم أبنائهم شخصيًّا لمشرفة الحافلة صباحًا.</li>
+          <li>يُسلَّم طلبة الروضة حتّى السادس الأساسيّ شخصيًّا للأهل أو من ينوب عنهم عند العودة.</li>
+        </ul>
+        <div class="warn">في حال عدم وجود من يستقبل الطالب عند وصوله، يعود مع الحافلة إلى المدرسة، ويتوجّب على الأهل اصطحابه من هناك. لا يمكن للحافلة الانتظار ريثما يصل وليّ الأمر، لأنّ ذلك يؤخّر بقيّة الطلبة ويعطّل الجولات اللاحقة.</div>
+
+        <h3>التواصل والملاحظات</h3>
+        <ul>
+          <li>أيّ تغيير على مواصلات العودة يتطلّب ملاحظة خطّيّة موقّعة لمدير/ة المرحلة، أو اتّصالًا هاتفيًّا بسكرتيرة المرحلة قبل الساعة 12:00 ظهرًا.</li>
+          <li>للتواصل بخصوص السائقين أو المشرفات، يُتواصَل مباشرةً مع مشرف الحركة أو مدير الخدمات اللوجستيّة.</li>
+          <li>التواصل الرسميّ بخصوص طلبة المواصلات يكون فقط مع مدير/ة المرحلة أو مشرف الحركة؛ أيّ اتّفاق مع مشرفة الحافلة لا اعتبار رسميّ له.</li>
+          <li>في الحالات الطارئة المستدعية تغييرًا في مواعيد الوصول، تتواصل المدرسة عبر الرسائل النصّيّة (SMS).</li>
+          <li>عند الحاجة لإنزال طالب لضرورة (كاستخدام الحمّام)، تتواصل المرافقة مع أهل المنزل للاستئذان أوّلًا؛ ولطلبة الروضة حتّى الثالث، تطلب المرافقة المساعدة من الأهل دون ترك الحافلة.</li>
+        </ul>
+        <div class="warn">عند تكرار مخالفة الطالب لميثاق السلوك وتعليمات الحافلة، وخاصّة ما يتعلّق بالسلامة العامّة، يحقّ للمدرسة حرمانه من ركوب الحافلة مؤقّتًا أو طيلة العام الدراسيّ.</div>
+
+        <h3>تعليمات خاصّة بالطلبة داخل الحافلة</h3>
+        <ul>
+          <li>تُطبَّق تعليمات الانضباط المدرسيّ وميثاق السلوك داخل الحافلة.</li>
+          <li>يُسمح بتناول الماء والعصائر والسندويشات فقط، مع المحافظة على النظافة.</li>
+          <li>يُمنع التجوّل داخل الحافلة.</li>
+        </ul>
+
+        <h4>استخدام الأجهزة الإلكترونيّة</h4>
+        <p>يُسمح لطلبة الصفوف (4–12) باستخدام الأجهزة للاستماع أو المشاهدة فقط، بشرط وضع الجهاز على الصامت أو استخدام سمّاعات الأذن. يُمنع التصوير منعًا باتًّا، ويتحمّل الطالب مسؤوليّة جهازه، إذ إنّ المدرسة غير مسؤولة عن تلفه أو فقدانه.</p>
+        <table class="simple">
+          <thead><tr><th>الصفوف</th><th>الأجهزة المسموحة</th></tr></thead>
+          <tbody>
+            <tr><td>4 – 5</td><td>جهاز لوحيّ (Tablet) أو حاسوب محمول (Laptop)</td></tr>
+            <tr><td>6 – 9</td><td>حاسوب محمول (Laptop)</td></tr>
+            <tr><td>10 – 12</td><td>حاسوب محمول (Laptop) وهاتف جوّال (Mobile)</td></tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <!-- APPENDICES -->
+    <section class="part" id="appendices">
+      <div class="part-head"><span class="part-num">٩</span><h2>الملحقات</h2></div>
+      <article class="sec">
+        <ul class="appendix-list">
+          <li><a href="#appendix-buses" style="color:inherit; text-decoration:none;">ملحق: تعليمات استخدام حافلات المدرسة</a></li>
+          <li>ملحق: كشف أرقام الهواتف المهمّة في المدرسة</li>
+          <li>ملحق: الرزنامة المدرسيّة</li>
+          <li>ملحق: مصفوفة الإجراءات للطلبة وأولياء الأمر</li>
+          <li>ملحق: ميثاق السلوك</li>
+          <li>ملحق: سياسة استخدام أجهزة التكنولوجيا والاتّصالات</li>
+        </ul>
+        <p style="margin-top:14px; font-size:0.9rem; color:#5a6a78;">تتوفّر هذه الملحقات كملفّات منفصلة — يمكن إضافة روابط تحميل لكلّ منها هنا عند توفّرها.</p>
+      </article>
+    </section>
+
+    <p style="text-align:center; font-weight:700; color:var(--navy); margin-top:20px;">
+      نشكر أولياء الأمر الكرام على تعاونهم الدائم معنا، ونتطلّع دائمًا إلى سنوات جديدة مثمرة.
+    </p>
+  </main>
+</div>
+
+<footer class="site">
+  <p>مدرسة عمّان الوطنيّة · دليل التعليمات المدرسيّة للعام الدراسيّ 2026–2027</p>
+</footer>
+
+</body>
+</html>
